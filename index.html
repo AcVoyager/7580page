@@ -29,7 +29,7 @@
 
   <!-- sticky navbar -->
   <header>
-    <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+    <nav class="navbar navbar-dark navbar-expand-lg bg-dark fixed-top" style="opacity: 0.5;">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Chang Xu</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -62,11 +62,29 @@
   </header>
 
   <!-- content -->
-  <main class="flex-shrink-0 flex-grow-1">
+  <!-- <main class="flex-shrink-0 flex-grow-1"> -->
+  <main>
+
+    <div class="hero flex-grow-1 d-flex justify-content-center align-items-center">
+
+      <div class="hero-text text-center"> 
+        <h1>{{current time}}</h1>
+        <p id="greeting-time"></p>
+      </div>
+
+      <div class="img-caption">
+        <div>
+          <h4>Sudi, West Lake</h4>
+          <p>Hangzhou, China</p>
+        </div>
+      </div>
+
+    </div>
+
     <div class="py-3 text-center container-fluid" id="welcome-banner">
       <div class="row py-5">
         <div class="mx-auto">
-          <h1 class="fw-light" id="greeting-time"></h1>
+          <!-- <h1 class="fw-light" id="greeting-time"></h1> -->
           <p class="lead text-muted">Welcome to Chang's portfolio page :)</p>
         </div>
       </div>
@@ -103,7 +121,7 @@
   </main>
   
   <!-- sticky footer -->
-  <footer class="footer mt-auto py-3 bg-dark">
+  <footer class="footer mt-auto py-3 bg-dark" style="opacity: 0.5;">
     <div class="container">
       <span class="text-muted">@2021 Copyright: Chang Xu</span>
     </div>

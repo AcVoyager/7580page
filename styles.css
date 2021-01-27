@@ -6,3 +6,29 @@
 .nav-item-current > .nav-link {
     color: black !important;
 }
+
+.hero {
+    color: white;
+    background-image: url("./res/noon.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.hero > .hero-text {
+
+}
+
+.img-caption {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-right: 5em;
+    margin-bottom: 3em;
+    opacity: 0.8;
+}
+
+.img-caption > div > h4 {
+    font-style: italic;
+}
