@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="./styles.css"> -->
+
+    <title>template</title>
+    <style>
+      body {
+        height: 100vh;
+      }
+    </style>
+  </head>
+
+  <!-- d-flex turns all direct children to flex items; flex-column makes them in horizontal order. -->
+  <body class="d-flex flex-column">
+    
+    <!-- sticky header -->
+    <header>
+      <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Clock</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./coming-soon.html">Assignment2</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./coming-soon.html">Assignment3</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./coming-soon.html">Assignment4</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./coming-soon.html">Assignment5</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+  
+    <!-- content -->
+    <main class="container-fluid d-flex my-5 justify-content-center align-items-center flex-grow-1">
+        <div>
+          <h1 class="fw-light">Coming Soon</h1>
+        </div>
+    </main>
+    
+    <!-- sticky footer -->
+    <footer class="footer mt-auto py-3 bg-dark">
+      <div class="container">
+        <span class="text-muted">@2021 Copyright: Chang Xu</span>
+      </div>
+    </footer>
+
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+</html>
