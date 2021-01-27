@@ -1,0 +1,8 @@
+/* Highlight current position in Navbar */
+.nav-item-current {
+    background-color: white;
+}
+
+.nav-item-current > .nav-link {
+    color: black !important;
+}
