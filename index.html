@@ -5,23 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles.css">
 
     <title>Chang's Portfolio</title>
 
-    <style>
-      .img-fluid {
-        max-width: 40%;
-      }
-      /* The following one is necessary, because sometimes the content is not big enough to
-         fill a page. In this case, we need to force it to be 100% height.
-      */
-      body {
-        height: 100vh;
-      }
-    </style>
   </head>
 
 <!-- d-flex turns all direct children to flex items; flex-column makes them in vertical order. -->
@@ -29,7 +17,7 @@
 
   <!-- sticky navbar -->
   <header>
-    <nav class="navbar navbar-dark navbar-expand-lg bg-dark" style="opacity: 0.5;">
+    <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand">Chang Xu</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -62,13 +50,12 @@
   </header>
 
   <!-- content -->
-  <!-- <main class="flex-shrink-0 flex-grow-1"> -->
-  <main>
+  <main class="d-flex flex-column">
 
     <div class="hero flex-grow-1 d-flex justify-content-center align-items-center">
 
       <div class="hero-text text-center"> 
-        <h1 id="cur-time">{{current time}}</h1>
+        <h1 id="cur-time"></h1>
         <p id="greeting"></p>
       </div>
 
@@ -81,21 +68,19 @@
 
     </div>
 
-    <div class="py-3 text-center container-fluid" id="welcome-banner">
-      <div class="row py-5">
-        <div class="mx-auto">
-          <!-- <h1 class="fw-light" id="greeting-time"></h1> -->
-          <p class="lead text-muted">Welcome to Chang's portfolio page :)</p>
-        </div>
+    <div class="text-center container-fluid d-flex" id="welcome-banner">
+      <div class="m-auto">
+        <!-- <h1 class="fw-light" id="greeting-time"></h1> -->
+        <p id="banner-text">Welcome to Chang's portfolio page</p>
       </div>
     </div>
     <script src="./js/time.js"></script>
 
-    <div class="container-fluid bg-light">
+    <div class="container-fluid bg-light py-5">
       <div class="row">
         <div class="col-md-6 pt-2">
           <div id="profile" class="text-center">
-            <img class="img-fluid" src="./res/life.jpg" alt="My life picture">
+            <img class="img-fluid" src="./res/life.jpg" alt="My life picture" style="max-width: 40%;">
             <div id="profile-info">
               <h2 class="py-1 fw-light">Chang Xu</h2>
               <p class="fw-light" style="margin-bottom: .5rem;">M.S. of Computer Science</p>
@@ -121,7 +106,7 @@
   </main>
   
   <!-- sticky footer -->
-  <footer class="footer mt-auto py-3 bg-dark" style="opacity: 0.5;">
+  <footer class="footer mt-auto py-3 bg-dark">
     <div class="container">
       <span class="text-muted">@2021 Copyright: Chang Xu</span>
     </div>

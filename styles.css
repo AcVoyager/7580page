@@ -16,9 +16,15 @@
     height: 100vh;
 }
 
-/* .hero > .hero-text {
+#welcome-banner {
+    height:30vh;
+    background-color: rgba(0, 0, 0, 0.05);
+}
 
-} */
+#banner-text {
+    color: black;
+    font-size: 2em;
+}
 
 .img-caption {
     position: absolute;
