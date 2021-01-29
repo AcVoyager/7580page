@@ -16,19 +16,19 @@
     height: 100vh;
 }
 
-.hero > .hero-text {
+/* .hero > .hero-text {
 
-}
+} */
 
 .img-caption {
     position: absolute;
     right: 0;
     bottom: 0;
-    margin-right: 5em;
-    margin-bottom: 3em;
+    text-align: right;
     opacity: 0.8;
+    margin-right: 1em;
 }
 
-.img-caption > div > h4 {
+.img-title {
     font-style: italic;
 }
