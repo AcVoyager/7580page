@@ -3,7 +3,7 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles.css">
@@ -12,110 +12,114 @@
 
   </head>
 
-<!-- d-flex turns all direct children to flex items; flex-column makes them in vertical order. -->
-<body class="d-flex flex-column">
+  <!-- d-flex turns all direct children to flex items; flex-column makes them in vertical order. -->
+  <body class="d-flex flex-column">
 
-  <!-- sticky navbar -->
-  <header>
-    <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand">Chang Xu</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item nav-item-current">
-              <a class="nav-link" aria-current="page" href="./index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="./clock.html">Clock</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./coming-soon.html">Assignment2</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./coming-soon.html">Assignment3</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./coming-soon.html">Assignment4</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./coming-soon.html">Assignment5</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <!-- content -->
-  <main class="d-flex flex-column">
-
-    <div class="hero flex-grow-1 d-flex justify-content-center align-items-center">
-
-      <div class="hero-text text-center"> 
-        <h1 id="cur-time"></h1>
-        <p id="greeting"></p>
-      </div>
-
-      <!-- <div class="img-caption">
-        <div>
-          <h4>Sudi, West Lake</h4>
-          <p>Hangzhou, China</p>
-        </div>
-      </div> -->
-
-    </div>
-
-    <div class="text-center container-fluid d-flex" id="welcome-banner">
-      <div class="m-auto">
-        <!-- <h1 class="fw-light" id="greeting-time"></h1> -->
-        <p id="banner-text">Welcome to Chang's portfolio page</p>
-      </div>
-    </div>
-    <script src="./js/time.js"></script>
-
-    <div class="container-fluid bg-light py-5">
-      <div class="row">
-        <div class="col-md-6 pt-2">
-          <div id="profile" class="text-center">
-            <img class="img-fluid" src="./res/life.jpg" alt="My life picture" style="max-width: 40%;">
-            <div id="profile-info">
-              <h2 class="py-1 fw-light">Chang Xu</h2>
-              <p class="fw-light" style="margin-bottom: .5rem;">M.S. of Computer Science</p>
-              <p class="fw-light">Northeastern University</p>
-            </div>
+    <!-- sticky navbar -->
+    <header>
+      <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand">Chang Xu</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item nav-item-current">
+                <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./clock.html">Clock</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./coming-soon.html">Assignment2</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./coming-soon.html">Assignment3</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./coming-soon.html">Assignment4</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./coming-soon.html">Assignment5</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./coming-soon.html">Final Project</a>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="col-md-6 pt-2" id="bio">
-          <h1 class="py-2 fw-light">Biography</h1>
-          <dl>
-            <dt>Education</dt>
-            <dd>2020.09 - 2021.05(estimated): M.S. at Northeastern University</dd>
-            <dd>2015.09 - 2019.06: B.Eng. at Zhejiang University</dd>
-            <dt>Working Experience</dt>
-            <dd>2020.07 - 2020.08: DS Intern at American Express</dd>
-            <dd>2018.07 - 2019.05: Research Assistant at Zhejiang University</dd>
-            <dt>Hobbies</dt>
-            <dd>Coding: Web Development and Data Analysis</dd>
-            <dd>Music: Contrabass and Guitar</dd>
-            <dd>Sports: Cycling and Skateboarding</dd>
-          </dl>
+      </nav>
+    </header>
+
+    <!-- content -->
+    <main class="d-flex flex-column">
+
+      <div class="hero flex-grow-1 d-flex justify-content-center align-items-center">
+
+        <div class="hero-text text-center"> 
+          <a class="visually-hidden">A picture of West Lake.</a>
+          <h1 id="cur-time"></h1>
+          <p id="greeting"></p>
+        </div>
+
+        <!-- <div class="img-caption">
+          <div>
+            <h4>Sudi, West Lake</h4>
+            <p>Hangzhou, China</p>
+          </div>
+        </div> -->
+
+      </div>
+
+      <div class="text-center container-fluid d-flex" id="welcome-banner">
+        <div class="m-auto">
+          <!-- <h1 class="fw-light" id="greeting-time"></h1> -->
+          <p id="banner-text">Welcome to Chang's portfolio page</p>
         </div>
       </div>
-    </div>
-  </main>
-  
-  <!-- sticky footer -->
-  <footer class="footer mt-auto py-3 bg-dark">
-    <div class="container">
-      <span style="color: white;">@2021 Copyright: Chang Xu</span>
-    </div>
-  </footer>
 
-</body>
+      <div class="container-fluid bg-light py-5">
+        <div class="row">
+          <div class="col-md-6 pt-2">
+            <div id="profile" class="text-center">
+              <img class="img-fluid" src="./res/life.jpg" alt="Chang's life picture." style="max-width: 40%;">
+              <div id="profile-info">
+                <h2 class="py-1 fw-light">Chang Xu</h2>
+                <p class="fw-light" style="margin-bottom: .5rem;">M.S. of Computer Science</p>
+                <p class="fw-light">Northeastern University</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 pt-2" id="bio">
+            <h1 class="py-2 fw-light">Biography</h1>
+            <dl>
+              <dt>Education</dt>
+              <dd>2020.09 - 2021.05(estimated): M.S. at Northeastern University</dd>
+              <dd>2015.09 - 2019.06: B.Eng. at Zhejiang University</dd>
+              <dt>Working Experience</dt>
+              <dd>2020.07 - 2020.08: DS Intern at American Express</dd>
+              <dd>2018.07 - 2019.05: Research Assistant at Zhejiang University</dd>
+              <dt>Hobbies</dt>
+              <dd>Coding: Web Development and Data Analysis</dd>
+              <dd>Music: Contrabass and Guitar</dd>
+              <dd>Sports: Cycling and Skateboarding</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </main>
+    
+    <!-- sticky footer -->
+    <footer class="footer mt-auto py-3 bg-dark">
+      <div class="container">
+        <span style="color: white;">@2021 Copyright: Chang Xu</span>
+      </div>
+    </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="./js/time.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+  </body>
 
 </html>
